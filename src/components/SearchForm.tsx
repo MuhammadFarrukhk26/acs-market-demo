@@ -35,8 +35,8 @@ export function SearchForm() {
   return (
     <form onSubmit={handleSubmit} className="max-w-3xl mx-auto p-8 space-y-6 bg-gray-800/50 backdrop-blur-sm rounded-2xl border border-gray-700">
       <div className="flex flex-wrap gap-2">
-        {platforms.map((platform) => (
-          <Button key={platform} variant="outline">
+        {platforms?.map((platform) => (
+          <Button key={platform} variant="outline" className='hover:bg-violet-700' onClick={(e)=>{e.preventDefault()}}>
             {platform}
           </Button>
         ))}
