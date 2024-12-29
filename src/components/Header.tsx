@@ -30,6 +30,12 @@ export default function Header() {
           >
             Sign In
           </button>
+          <button
+            onClick={() => openAuth("signup")}
+            className="bg-purple-500 hover:bg-purple-600 px-4 py-2 rounded-lg"
+          >
+            Sign Up
+          </button>
           <Menu className="md:hidden w-6 h-6 cursor-pointer" />
         </div>
       </div>
