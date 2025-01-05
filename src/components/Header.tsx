@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { ShoppingBag, Menu, Bell } from "lucide-react";
 import NavLinks from "./NavLinks";
-import logoimg from "../assets/logo.png";
+import logoimg from "../assets/ACS-.png";
 import AuthModal from "./auth/AuthModal";
 
 export default function Header() {

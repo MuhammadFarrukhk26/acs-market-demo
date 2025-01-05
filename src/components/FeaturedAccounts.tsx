@@ -17,7 +17,7 @@ export default function FeaturedAccounts() {
       </section>
       <section className="p-6">
         <div>
-          <h2 className="text-2xl font-bold text-white mb-6">
+          <h2 className="text-2xl font-bold text-prime mb-6">
             Social-market is your reliable partner for buying and selling
             Telegram channels.
           </h2>

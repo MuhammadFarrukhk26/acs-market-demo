@@ -49,7 +49,7 @@ export function SearchForm() {
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
           placeholder="Search by name"
-          className="w-full pl-10 pr-4 py-3 rounded-md bg-white"
+          className="w-full pl-10 pr-4 py-3 rounded-md text-black"
         />
       </div>
 
@@ -57,7 +57,7 @@ export function SearchForm() {
         <select
           value={selectedSubject}
           onChange={(e) => setSelectedSubject(e.target.value)}
-          className="w-full px-4 py-3 rounded-md bg-white appearance-none"
+          className="w-full px-4 py-3 rounded-md bg-white text-black appearance-none"
         >
           <option value="">Select subject</option>
           <option value="gaming">Gaming</option>
@@ -105,7 +105,7 @@ export function SearchForm() {
       </div>
 
       <div className="flex justify-center">
-        <Button type="submit" className="px-8">
+        <Button type="submit" className="px-8 bg-button text-black font-bold">
           Search
         </Button>
       </div>

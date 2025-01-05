@@ -3,10 +3,19 @@
 @tailwind utilities;
 
 .bg-img {
-    background: url(./assets/bg.jpg) no-repeat center;
+    background: url(./assets/bgimg.jpeg) no-repeat center;
     background-size: cover;
 }
 
 .ml-3 {
     margin-left: 150px;
+}
+
+.text-prime {
+    color: #ddad2a;
+}
+
+.bg-button {
+    background-color: #ddad2a;
+    color: #000;
 }

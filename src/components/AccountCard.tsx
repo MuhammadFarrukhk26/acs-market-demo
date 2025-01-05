@@ -23,7 +23,7 @@ export default function AccountCard({ account }: { account: Account }) {
           <Heart className="w-4 h-4" />
           <span>{account.engagement}% engagement</span>
         </div>
-        <button className="w-full bg-purple-500 hover:bg-purple-600 text-white py-2 rounded-lg">
+        <button className="w-full bg-button font-bold hover:bg-purple-600 text-black py-2 rounded-lg">
           View Details
         </button>
       </div>

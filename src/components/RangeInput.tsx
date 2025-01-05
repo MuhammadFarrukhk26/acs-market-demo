@@ -17,7 +17,7 @@ export function RangeInput({ label, fromValue, toValue, onFromChange, onToChange
         value={fromValue}
         onChange={(e) => onFromChange(e.target.value)}
         placeholder="from"
-        className="bg-white rounded-md px-3 py-2 w-full"
+        className="bg-white rounded-md px-3 py-2 w-full text-black"
       />
       <span className="text-white">—</span>
       <input
@@ -25,7 +25,7 @@ export function RangeInput({ label, fromValue, toValue, onFromChange, onToChange
         value={toValue}
         onChange={(e) => onToChange(e.target.value)}
         placeholder="to"
-        className="bg-white rounded-md px-3 py-2 w-full"
+        className="bg-white rounded-md px-3 py-2 w-full text-black"
       />
     </div>
   );

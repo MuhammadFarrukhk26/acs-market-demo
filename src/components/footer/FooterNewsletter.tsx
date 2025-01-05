@@ -3,7 +3,7 @@ import React from 'react';
 export default function FooterNewsletter() {
   return (
     <div>
-      <h3 className="text-lg font-semibold mb-4">Stay Updated</h3>
+      <h3 className="text-lg font-semibold mb-4 text-prime">Stay Updated</h3>
       <p className="mb-4">Subscribe to our newsletter for the latest updates and offers.</p>
       <form className="flex">
         <input
@@ -13,7 +13,7 @@ export default function FooterNewsletter() {
         />
         <button
           type="submit"
-          className="bg-purple-500 hover:bg-purple-600 px-4 py-2 rounded-r-lg"
+          className="bg-button font-bold hover:bg-purple-600 px-4 py-2 rounded-r-lg"
         >
           Subscribe
         </button>
