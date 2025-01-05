@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bg-img {
+    background: url(./assets/bg.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.ml-3 {
+    margin-left: 150px;
+}

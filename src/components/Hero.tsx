@@ -1,8 +1,10 @@
 import React from "react";
 import { SearchForm } from "./SearchForm";
+import Header from "./Header";
 export default function Hero() {
   return (
-    <div className="relative bg-gray-900 text-white py-20">
+    <div className="relative bg-img bg-gray-900 text-white py-10">
+      {/* <Header/> */}
       <div className="max-w-7xl mx-auto px-6">
         <div className="relative z-10">
           <SearchForm />
