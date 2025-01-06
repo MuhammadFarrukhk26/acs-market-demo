@@ -18,8 +18,8 @@ export default function Header() {
       <div className="max-w-7xl mx-auto flex justify-center items-center space-x-4">
         <div className=" text-center items-center ml-10">
           {/* <ShoppingBag className="w-8 h-8 text-purple-400" /> */}
-          <img src={logoimg} />
-          <p className="text-xl font-bold">
+          <img src={logoimg} className="pl-10 ml-10"/>
+          <p className="text-xl font-bold pl-10 ml-10">
             Quick & Secure social media marketplace.
           </p>
         </div>

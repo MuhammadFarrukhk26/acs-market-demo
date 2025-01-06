@@ -9,7 +9,7 @@ export default function FeaturedAccounts() {
         <h2 className="text-2xl font-bold text-white mb-6">
           Featured Accounts
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
           {accounts.map((account) => (
             <AccountCard key={account.id} account={account} />
           ))}
