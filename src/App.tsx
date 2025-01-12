@@ -6,8 +6,8 @@ import Footer from "./components/footer/Footer";
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-900">
-      <Header />
+    <div className="min-h-screen bg-white-900">
+      {/* <Header /> */}
       <Hero />
       <main className="max-w-7xl mx-auto">
         <FeaturedAccounts />

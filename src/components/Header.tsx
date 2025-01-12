@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { ShoppingBag, Menu, Bell } from "lucide-react";
+import { ShoppingBag, Menu, Bell, HandshakeIcon } from "lucide-react";
 import NavLinks from "./NavLinks";
-import logoimg from "../assets/ACS-.png";
+import logoimg from "../assets/logo.png";
 import AuthModal from "./auth/AuthModal";
 
 export default function Header() {
@@ -14,49 +14,59 @@ export default function Header() {
   };
 
   return (
-    <header className="bg-transparent flex text-white py-4 px-6 top-0 ">
-      <div className="max-w-7xl mx-auto flex justify-center items-center space-x-4">
-        <div className=" text-center items-center ml-10">
-          {/* <ShoppingBag className="w-8 h-8 text-purple-400" /> */}
-          <img src={logoimg} className="pl-10 ml-10"/>
-          <p className="text-xl font-bold pl-10 ml-10">
+    <header className="bg-transparent text-white py-4 mb-4 px-6">
+      <div className="max-w-7xl mx-auto flex items-center justify-between relative">
+        {/* Centered Logo and Brand */}
+        <div className="absolute left-1/2 -translate-x-1/2 flex flex-col items-center">
+          <div className="flex items-center space-x-2">
+            {/* <HandshakeIcon className="h-6 w-6" />
+            <span className="text-xl font-bold">Accs-market.com</span> */}
+            <img src={logoimg} />
+          </div>
+          <p className="text-lg text-white">
             Quick & Secure social media marketplace.
           </p>
         </div>
-        {/* 
-        <div className="flex items-center space-x-2">
-          <Bell className="w-6 h-6 cursor-pointer hover:text-purple-400" />
-          <button onClick={() => openAuth("login")} className="rounded-lg">
-            Sign In
+
+        {/* Spacer div to maintain layout */}
+        <div className="invisible">
+          <HandshakeIcon className="h-6 w-6" />
+        </div>
+
+        {/* Auth Buttons */}
+        {/* sm:text-base */}
+        <div className="flex items-center space-x-4">
+          <button
+            onClick={() => openAuth("signup")}
+            className="sell-btn text-white px-4 rounded-lg hover:bg-purple-800 transition text-sm"
+          >
+            Start Selling
           </button>
-          <span>/</span>
-          <button onClick={() => openAuth("signup")} className="rounded-lg">
-            Sign Up
-          </button>
-          <Menu className="md:hidden w-6 h-6 cursor-pointer" />
-          <AuthModal
-            isOpen={showAuthModal}
-            onClose={() => setShowAuthModal(false)}
-            mode={authMode}
-          />
-        </div> */}
+          <div className="md:block">
+            {/* <button className="text-gray-300 hover:text-white transition"> */}
+            <button
+              onClick={() => openAuth("login")}
+              className="text-white hover:text-purple-400 transition text-sm sm:text-base"
+            >
+              Sign In
+            </button>{" "}
+            <span className="text-gray-400">/</span>{" "}
+            <button
+              onClick={() => openAuth("signup")}
+              className="text-white hover:text-purple-400 transition text-sm sm:text-base"
+            >
+              Sign Up
+            </button>
+            {/* </button> */}
+          </div>
+        </div>
       </div>
-      <div className="flex items-center space-x-2 pr-6">
-        <Bell className="w-6 h-6 cursor-pointer hover:text-purple-400" />
-        <button onClick={() => openAuth("login")} className="rounded-lg">
-          Sign In
-        </button>
-        <span>/</span>
-        <button onClick={() => openAuth("signup")} className="rounded-lg">
-          Sign Up
-        </button>
-        <Menu className="md:hidden w-6 h-6 cursor-pointer" />
-        <AuthModal
-          isOpen={showAuthModal}
-          onClose={() => setShowAuthModal(false)}
-          mode={authMode}
-        />
-      </div>
+      {/* Authentication Modal */}
+      <AuthModal
+        isOpen={showAuthModal}
+        onClose={() => setShowAuthModal(false)}
+        mode={authMode}
+      />
     </header>
   );
 }

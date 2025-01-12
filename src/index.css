@@ -3,19 +3,31 @@
 @tailwind utilities;
 
 .bg-img {
-    background: url(./assets/bgimg.jpeg) no-repeat center;
-    background-size: cover;
+  background: url(./assets/bg.jpg) no-repeat center;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.sell-btn {
+  display: block;
+  padding: 0px 20px;
+  color: #ffffff;
+  font: 15px / 30px "Proxima Nova", sans-serif;
+  background: #4b2eae;
+  border-radius: 25px;
 }
 
+.sell-btn:hover {
+  background: #382280 !important;
+}
 .ml-3 {
-    margin-left: 150px;
+  margin-left: 150px;
 }
 
 .text-prime {
-    color: #ddad2a;
+  color: #ddad2a;
 }
 
 .bg-button {
-    background-color: #ddad2a;
-    color: #000;
+  background-color: #ddad2a;
+  color: #000;
 }
